@@ -30,6 +30,14 @@
                 <span class="mx-3">Manage Users</span>
             </a>
             <a class="flex items-center px-6 py-2 mt-4 text-gray-100 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
+                href="{{ route('admin.users.import.form') }}">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 13C9 13.5523 9.44772 14 10 14H14C14.5523 14 15 13.5523 15 13V7C15 6.44772 14.5523 6 14 6H10C9.44772 6 9 6.44772 9 7V13Z" fill="currentColor"></path>
+                    <path d="M17 17H7C4.79086 17 3 15.2091 3 13V7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V13C21 15.2091 19.2091 17 17 17ZM7 5C5.89543 5 5 5.89543 5 7V13C5 14.1046 5.89543 15 7 15H17C18.1046 15 19 14.1046 19 13V7C19 5.89543 18.1046 5 17 5H7Z" fill="currentColor"></path>
+                </svg>
+                <span class="mx-3">Import Users</span>
+            </a>
+            <a class="flex items-center px-6 py-2 mt-4 text-gray-100 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"
                 href="{{ route('admin.kelas.index') }}">
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="currentColor"></path>

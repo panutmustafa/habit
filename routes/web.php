@@ -24,6 +24,9 @@ Route::middleware(['auth', \App\Http\Middleware\AdminMiddleware::class])->prefix
     Route::get('/users/{user}/edit', [AdminController::class, 'usersEdit'])->name('admin.users.edit');
     Route::put('/users/{user}', [AdminController::class, 'usersUpdate'])->name('admin.users.update');
     Route::delete('/users/{user}', [AdminController::class, 'usersDestroy'])->name('admin.users.destroy');
+    Route::get('/users/import', [AdminController::class, 'usersImportForm'])->name('admin.users.import.form');
+    Route::post('/users/import', [AdminController::class, 'usersImportStore'])->name('admin.users.import.store');
+    Route::get('/users/import/template', [AdminController::class, 'downloadUserImportTemplate'])->name('admin.users.import.template');
 
     // Class Management
     Route::get('/kelas', [AdminController::class, 'kelasIndex'])->name('admin.kelas.index');
