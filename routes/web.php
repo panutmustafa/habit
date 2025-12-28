@@ -4,9 +4,10 @@ use App\Http\Controllers\GuruController; // Import GuruController
 use App\Http\Controllers\AdminController; // Import AdminController
 use App\Http\Controllers\SiswaController; // Import SiswaController
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeController; // Add this line
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 Route::get('/dashboard', function () {
